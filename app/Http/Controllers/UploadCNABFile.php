@@ -25,7 +25,7 @@ class UploadCNABFile extends Controller
      */
     public function store(Request $request)
     {
-        $file = $request->file('CNABFile')->store('avatars/file');
+        $file = $request->file('CNABFile')->store('file');
     }
 
     /**
