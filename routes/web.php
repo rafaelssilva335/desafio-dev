@@ -15,3 +15,4 @@ use App\Http\Controllers\UploadCNABFile;
 */
 
 Route::resource('/upload/CNAB', UploadCNABFile::class);
+Route::get('/', function(){return view('welcome');});

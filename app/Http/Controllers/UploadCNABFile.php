@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use App\Services\Files\FormatFileCNAB;
 
 class UploadCNABFile extends Controller
 {
@@ -23,9 +24,11 @@ class UploadCNABFile extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, FormatFileCNAB $formatFileCNAB)
     {
         $file = $request->file('CNABFile')->store('file');
+        $formatFileCNAB->formatFileByPath($file);
+
     }
 
     /**
