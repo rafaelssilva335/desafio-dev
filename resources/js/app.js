@@ -1,4 +1,5 @@
 import store from './store/store';
+require('./bootstrap');
 
 window.Vue = require('vue').default;
 

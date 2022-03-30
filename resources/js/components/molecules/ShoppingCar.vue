@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 .total {
-    margin: 24px 0;
+    margin: 6px 0;
 }
 .content-product-actions {
     display: grid;

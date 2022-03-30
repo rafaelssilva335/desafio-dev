@@ -2,7 +2,7 @@
      <div class="card1">
         <div class="card-header">
             <img class="card-img-top" :src="product.thumbnail">
-            <h5 class="card-title">{{product.title}}</h5>
+            <p class="card-title">{{product.title}}</p>
         </div>
         <div class="card-body">
             <div  class="card-text">

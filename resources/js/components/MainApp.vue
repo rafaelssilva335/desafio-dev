@@ -1,12 +1,15 @@
 <template>
-    <div class="container">
+    <div class="content">
         <div class="row">
             <div class="col-md-8">
-                <div v-for="product in products" :key="product.id" class="col-md-4 card-content">
-                    <card 
-                        :product="product" 
-                        />
+                <div class="row">
+                    <div v-for="product in products" :key="product.id" class="col-md-4 card-content">
+                        <card 
+                            :product="product" 
+                            />
+                    </div>
                 </div>
+
             </div>
 
             <div class="col-md-4">
@@ -14,8 +17,8 @@
                     <shopping-car/>
                 </div>
             </div>
-        </div>
-    </div>    
+        </div>    
+    </div>
 </template>
 
 <script>
